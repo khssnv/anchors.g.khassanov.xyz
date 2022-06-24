@@ -6,8 +6,18 @@
     <p>
       <slot></slot>
     </p>
-    <a v-if="prevId" :href="`#section-${prevId}`" class="underline text-blue-400">Prev</a>
-    <a v-if="nextId" :href="`#section-${nextId}`" class="underline text-blue-400">Next</a>
+    <a
+      v-if="prevId"
+      :href="`#section-${prevId}`"
+      class="underline text-blue-400"
+      >Prev</a
+    >
+    <a
+      v-if="nextId"
+      :href="`#section-${nextId}`"
+      class="underline text-blue-400"
+      >Next</a
+    >
   </div>
 </template>
 <script>
